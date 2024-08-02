@@ -11,3 +11,7 @@ pin 'sigmun', to: 'sigmun.js', preload: true
 pin "select2", to: "https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"
 pin 'custom', to: 'custom.js'
 
+pin "imask", to: "https://cdn.jsdelivr.net/npm/imask@6.0.7/dist/imask.min.js"
+
+pin "chartkick", to: "chartkick.js"
+pin "Chart.bundle", to: "Chart.bundle.js"

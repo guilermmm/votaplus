@@ -1,6 +1,6 @@
 class CreateAdmin < SeedMigration::Migration
   def up
-    Usuario.create({nome: "Administrador", email: "ti@prefeiturademossoro.com.br", permissao: "admin", password: "G3t1c@2023"})
+    Usuario.create({nome: "Administrador", email: "admin@admin.com", permissao: "admin", password: "admin"})
   end
 
   def down

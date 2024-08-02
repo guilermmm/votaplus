@@ -1,8 +1,8 @@
 pt-BR:
   recaptcha:
     errors:
-      verification_failed: 'A verificação do reCAPTCHA falhou. Tente novamente.'
-      recaptcha_unreachable: 'Erro no servidor de verificação reCAPTCHA, tente novamente.'
+      verification_failed: "A verificação do reCAPTCHA falhou. Tente novamente."
+      recaptcha_unreachable: "Erro no servidor de verificação reCAPTCHA, tente novamente."
   date:
     abbr_day_names:
       - Dom
@@ -35,11 +35,11 @@ pt-BR:
       - Sexta-Feira
       - Sábado
     formats:
-      default: ! '%d/%m/%Y'
-      long: ! '%d de %B de %Y'
-      short: ! '%d de %B'
-      periodo: ! '%A, %d de %B de %Y'
-      publicacao: '%d %^b %Y'
+      default: ! "%d/%m/%Y"
+      long: ! "%d de %B de %Y"
+      short: ! "%d de %B"
+      periodo: ! "%A, %d de %B de %Y"
+      publicacao: "%d %^b %Y"
     month_names:
       -
       - Janeiro
@@ -84,16 +84,16 @@ pt-BR:
         other: mais de %{count} anos
       x_days:
         one: 1 dia
-        other: ! '%{count} dias'
+        other: ! "%{count} dias"
       x_minutes:
         one: 1 m
-        other: ! '%{count} m'
+        other: ! "%{count} m"
       x_months:
         one: 1 mês
-        other: ! '%{count} meses'
+        other: ! "%{count} meses"
       x_seconds:
         one: 1 s
-        other: ! '%{count} s'
+        other: ! "%{count} s"
     prompts:
       day: Dia
       hour: Hora
@@ -102,7 +102,7 @@ pt-BR:
       second: Segundo
       year: Ano
   errors:
-    format: ! '%{attribute} %{message}'
+    format: ! "%{attribute} %{message}"
     messages:
       accepted: tem de ser aceite
       blank: não pode estar em branco
@@ -120,7 +120,7 @@ pt-BR:
       not_a_number: não é um número
       not_an_integer: tem de ser um inteiro
       odd: tem de ser ímpar
-      record_invalid: 'A validação falhou: %{errors}'
+      record_invalid: "A validação falhou: %{errors}"
       restrict_dependent_destroy:
         has_one: Não é possível excluir o registro pois existe um %{record} dependente
         has_many: Não é possível excluir o registro pois existem %{record} dependentes
@@ -129,10 +129,10 @@ pt-BR:
       too_short: é demasiado pequeno (o mínimo é de %{count} caracteres)
       wrong_length: comprimento errado (deve ter %{count} caracteres)
     template:
-      body: ! 'Por favor, verifique os seguintes campos:'
+      body: ! "Por favor, verifique os seguintes campos:"
       header:
-        one: ! 'Não foi possível guardar %{model}: 1 erro'
-        other: ! 'Não foi possível guardar %{model}: %{count} erros'
+        one: ! "Não foi possível guardar %{model}: 1 erro"
+        other: ! "Não foi possível guardar %{model}: %{count} erros"
   breadcrumbs:
     application:
       root: "Início"
@@ -141,7 +141,7 @@ pt-BR:
   helpers:
     actions: "Opções"
     select:
-      prompt: Por favor seleccione
+      prompt: Por favor, selecione uma opção.
     submit:
       create: Criar %{model}
       submit: Gravar %{model}
@@ -173,21 +173,21 @@ pt-BR:
     currency:
       format:
         delimiter: .
-        format: ! '%u%n'
+        format: ! "%u%n"
         precision: 2
-        separator: ! ','
+        separator: ! ","
         significant: false
         strip_insignificant_zeros: false
         unit: R$
     format:
       delimiter: .
       precision: 3
-      separator: ! ','
+      separator: ! ","
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: ! '%n %u'
+        format: ! "%n %u"
         units:
           billion:
             one: mil milhões
@@ -202,14 +202,14 @@ pt-BR:
           trillion:
             one: bilião
             other: biliões
-          unit: ''
+          unit: ""
       format:
-        delimiter: ''
+        delimiter: ""
         precision: 1
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: ! '%n %u'
+        format: ! "%n %u"
         units:
           byte:
             one: Byte
@@ -220,22 +220,22 @@ pt-BR:
           tb: TB
     percentage:
       format:
-        delimiter: ''
+        delimiter: ""
     precision:
       format:
-        delimiter: ''
+        delimiter: ""
   support:
     array:
-      last_word_connector: ! ', e'
-      two_words_connector: ! ' e '
-      words_connector: ! ', '
+      last_word_connector: ! ", e"
+      two_words_connector: ! " e "
+      words_connector: ! ", "
   time:
     am: am
     formats:
-      default: ! '%A, %d de %B de %Y, %H:%Mh'
-      long: ! '%A, %d de %B de %Y, %H:%Mh'
-      short: ! '%d/%m, %H:%M hs'
-      normal: ! '%d/%m/%Y - %H:%M:%S'
-      periodo: ! '%A, %d de %B de %Y'
-      publicacao: '%d %^b %Y'
+      default: ! "%A, %d de %B de %Y, %H:%Mh"
+      long: ! "%A, %d de %B de %Y, %H:%Mh"
+      short: ! "%d/%m, %H:%M hs"
+      normal: ! "%d/%m/%Y - %H:%M:%S"
+      periodo: ! "%A, %d de %B de %Y"
+      publicacao: "%d %^b %Y"
     pm: pm

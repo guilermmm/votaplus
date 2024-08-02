@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      candidato:
+        one: Candidato
+        other: Candidatos
+    attributes:
+      candidato:
+        id: Id
+        nome: Nome
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Atualizado em

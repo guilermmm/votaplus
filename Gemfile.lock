@@ -115,6 +115,7 @@ GEM
       image_processing (~> 1.1)
       marcel (~> 1.0.0)
       ssrf_filter (~> 1.0)
+    chartkick (5.0.7)
     childprocess (5.0.0)
     chronic (0.10.2)
     cocoon (1.2.15)
@@ -396,6 +397,7 @@ DEPENDENCIES
   cancancan
   capybara
   carrierwave (>= 3.0.0.rc, < 4.0)
+  chartkick (~> 5.0)
   cocoon
   debug
   devise (~> 4.9)

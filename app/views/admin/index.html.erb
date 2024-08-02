@@ -1,13 +1,12 @@
 <% content_for :breadcrumb do %>
-    <li class="breadcrumb-item active" aria-current="page">
-       Dashboard 
-    </li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Dashboard 
+  </li>
 <% end %>
-
 <div class="container my-4">
-    <div class="d-flex align-items-center justify-content-center" style="height: 650px">
-        <div class="p-2 bd-highlight col-example">
-            <%= image_tag "main-logo.png", class: "mw-250px mh-250px card-rounded" %>
-        </div>
+  <div class="d-flex align-items-center justify-content-center" style="height: 650px">
+    <div class="p-2 bd-highlight" style="width: 100%;">
+      <%= bar_chart Eleitor.joins(:candidato, :bairro).group("candidatos.nome", "bairros.nome").count, stacked: true, colors: ["#6CE5E8", "#41B8D5", "#2D8BBA"], loading: "Carregando...", empty: "Ainda não há dados a serem mostrados" %>
     </div>
+  </div>
 </div>

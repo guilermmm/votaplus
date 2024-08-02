@@ -86,3 +86,5 @@ gem 'rack-attack'
 gem 'cancancan'
 
 
+
+gem "chartkick", "~> 5.0"

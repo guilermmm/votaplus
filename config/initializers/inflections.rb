@@ -15,6 +15,9 @@
 #   inflect.acronym "RESTful"
 # end
 ActiveSupport::Inflector.inflections do |inflect|
-    inflect.irregular "usuario", "usuarios"
-    inflect.irregular "permissao", "permissoes"
-  end
+  inflect.irregular 'usuario', 'usuarios'
+  inflect.irregular 'permissao', 'permissoes'
+  inflect.irregular 'candidato', 'candidatos'
+  inflect.irregular 'eleitor', 'eleitores'
+  inflect.irregular 'bairro', 'bairros'
+end

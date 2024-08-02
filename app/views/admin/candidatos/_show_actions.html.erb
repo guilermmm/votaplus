@@ -1,0 +1,24 @@
+<%- model_class=Candidato -%>
+
+<% remote ||= remote %>
+
+<% if can? :edit, candidato -%>
+    <%= link_to edit_admin_candidato_path(candidato), :class=> 'btn btn-warning me-2', :remote => remote do %>
+        <i class="bi bi-pencil"></i> Editar
+    <% end %>
+<% end %>
+
+<% if can? :destroy, candidato -%>
+    <%= button_to admin_candidato_path(candidato), :remote=> remote,
+        :method => 'delete',
+        :data => { :confirm => "Tem certeza que deseja remover?"},
+        :class => 'btn btn-danger me-2' do %>
+        <i class="bi bi-eraser"></i> Remover
+    <% end %>
+<% end %>
+
+<% if can? :new, Candidato -%>
+    <%= link_to new_admin_candidato_path, class: "btn btn-primary me-2" do %>
+        <i class="bi bi-plus"></i> Adicionar 
+    <% end %>
+<% end %>

@@ -1,0 +1,50 @@
+<% remote = false if remote == nil %>
+<% id ||= Time.now.to_i %>
+<%= form_with(model: [:admin, eleitor], data: { turbo: remote  }) do |form| %>
+  <%= hidden_field_tag :remote, remote %>
+  <!-- Note: Para adicionar campo obrigatório é só adicionar a classe '.label-required' no label. -->
+  <div class="card-body" data-controller="form">
+    <div class="mb-3 ">
+      <%= form.label :nome, class: "form-label"  %>
+      <%= form.text_field :nome, class: "form-control" %>
+    </div>
+    <div class="mb-3 ">
+      <%= form.label :cpf, class: "form-label"  %>
+      <%= form.text_field :cpf,  data: { action: 'input->form#cpfMask' }, class: "form-control" %>
+    </div>
+    <div class="mb-3 ">
+      <%= form.label :rua, class: "form-label"  %>
+      <%= form.text_field :rua, class: "form-control" %>
+    </div>
+    <div class="mb-3 ">
+      <%= form.label :bairro_id, class: "form-label"  %>
+      <%= form.collection_select :bairro_id, Bairro.all, :id, :nome, {prompt: true}, class: "form-select" , style: "width: 100%" %>
+    </div>
+    <div class="mb-3 ">
+      <%= form.label :cep, class: "form-label"  %>
+      <%= form.text_field :cep, data: { action: 'input->form#cepMask' }, class: "form-control" %>
+    </div>
+    <div class="mb-3 ">
+      <%= form.label :numero, class: "form-label"  %>
+      <%= form.text_field :numero, class: "form-control" %>
+    </div>
+    <div class="mb-3 ">
+      <%= form.label :filiacao, class: "form-label"  %>
+      <%= form.text_field :filiacao, class: "form-control" %>
+    </div>
+    <div class="mb-3 ">
+      <%= form.label :zona, class: "form-label"  %>
+      <%= form.text_field :zona, class: "form-control" %>
+    </div>
+    <div class="mb-3 ">
+      <%= form.label :candidato_id, class: "form-label"  %>
+      <%= form.collection_select :candidato_id, Candidato.all, :id, :nome, {prompt: true}, class: "form-select" , style: "width: 100%" %>
+    </div>
+  </div>
+  <div class="card-footer d-flex justify-content-end">
+    <%= render "admin/eleitores/form_actions" %>
+    <% unless remote %>
+      <%= link_to "<i class='bi bi-arrow-left'></i> #{t("helpers.links.back")}".html_safe, admin_eleitores_path, :class=> "d-inline-block btn btn-secondary me-2" %>
+    <% end %>
+  </div>
+<% end %>

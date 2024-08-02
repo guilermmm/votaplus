@@ -1,0 +1,21 @@
+pt-BR:
+  activerecord:
+    models:
+      eleitor:
+        one: Eleitor
+        other: Eleitores
+    attributes:
+      eleitor:
+        id: Id
+        nome: Nome
+        cpf: CPF
+        rua: Rua
+        bairro: Bairro
+        cep: CEP
+        numero: Número
+        filiacao: Filiação
+        zona: Zona
+        candidato_id: Candidato
+        deleted_at: Deletado em
+        created_at: Criado em
+        updated_at: Atualizado em
